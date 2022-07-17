@@ -1,0 +1,266 @@
+/* -------  General Styles ------- */
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: 400;
+	margin: 0 10px 10px 10px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+p {
+	line-height: 1.5em;
+	margin: 0;
+}
+
+section {
+	padding: 20px;
+}
+
+section.alternate-background {
+	background-color: #00a699;
+	color: #fff;
+}
+
+main img {
+	width: 350px;
+	margin: 5px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	flex: 1;
+	margin: 10px;
+}
+
+.item-double {
+	flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+	background-color: #ff385c;
+	padding: 20px 20px 0 20px;
+	text-align: center;
+}
+
+.logo {
+	font-family: "Pangolin", cursive;
+	font-size: 72px;
+	color: #fff;
+}
+
+header nav ul li {
+	justify-content: space-between;
+	list-style-type: none;
+  display:inline-block; 
+}
+
+header nav ul li a {
+	justify-content: space-between;
+	color: #fff;
+	text-decoration: none;
+	padding: 0 10px 0 0;
+  align-items: stretch;
+}
+
+header nav ul li a:hover {
+	color: #bdbdbd;
+	text-decoration: none;
+}
+
+.nav-item {
+	display: flex;
+	flex: 1 0 2%;
+	text-align: center;
+	
+}
+
+.logo {
+	margin: 0 auto;
+}
+
+.logo a {
+	color: #338ad6;
+}
+
+/* -------  Search Form ------- */
+form {
+	border: 2px solid #ff385c;
+	padding: 10px;
+}
+
+form label {
+	display: inline-block;
+	/* float: left; */
+	font-weight: bold;
+	margin-right: 0;
+	width: 100px;
+}
+
+form select,
+form input {
+	display: inline-block;
+	/* float: right; */
+	margin-bottom: 5px;
+	width: 140px;
+}
+
+#type {
+	width: 150px;
+}
+
+form button {
+	background-color: #ff385c;
+	border: none;
+	color: #fff;
+	font-size: 24px;
+	padding: 15px;
+	width: 100%;
+}
+
+/* -------  Footer ------- */
+
+footer {
+	background-color: #ff385c;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+/* -------  Media Query -------------------------- */
+
+@media (min-width: 480px) {
+	.header {
+		display: flex;
+		flex-direction: row;
+		display: inline-block;
+		justify-content: space-around;
+		background-color: #ff385c;
+		/* padding: 20px 20px 0 20px; */
+		/* text-align:end; */
+	}
+
+	.navbar .logo {
+		font-family: "Pangolin", cursive;
+		font-size: 72px;
+		color: #fff;
+		text-align: left;
+		margin: 0%;
+		padding: 0%;
+	}
+	.navbar {
+		display: flex;
+		justify-content:space-between;
+		align-items: center;
+		padding: 0px;
+	}
+
+	.menu {
+		display: flex;
+		display: inline-block;
+		align-items:stretch;
+		justify-content: space-around;
+	}
+
+	.menu .item {
+		display: inline-block;
+    font-size: 24px;
+	}
+
+	.form-container {
+		margin: 1rem 1;
+		display: flex;
+		justify-content: center;
+	}
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		margin-right: 250px;
+		align-items: stretch;
+	}
+
+	section.alternate-background {
+		display: flex;
+		background-color: #00a699;
+		color: #fff;
+		vertical-align: bottom;
+	}
+	section #ideas div {
+		display: flex;
+		max-height: 100%;
+		min-width: 100%;
+		object-fit: cover;
+		vertical-align: bottom;
+	}
+
+	form button {
+		display: flex;
+		background-color: #00a699;
+		border: none;
+		color: #fff;
+		font-size: 24px;
+		padding: 15px;
+		width: 7%;
+		margin-left: auto;
+		height: 60px;
+	}
+
+	.aboutParent {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.aboutChild {
+		flex-basis: 25%;
+		/* padding: 0px;
+    margin:0%; */
+		box-sizing: border-box;
+		width: 25%;
+	}
+
+	.aboutChild img {
+		display: flex;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.aboutChild p {
+		width: 150%;
+	}
+
+	.parent {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	.child {
+		flex-basis: 50%;
+		padding: 10px;
+		box-sizing: border-box;
+	}
+	.child img {
+		width: 100%;
+	}
+}
